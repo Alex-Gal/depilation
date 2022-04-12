@@ -1,50 +1,105 @@
-// @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Jura:wght@300;400;500;600&display=swap');
-// .firstBlockPicture {
-//     position: absolute;
-//     top: 0;
-//     z-index: 0;
-// }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Open+Sans:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+@mixin nav_font {
+    font-family: 'Jura', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+}
 
 .header {
+    background: url('../../img/firstBlockPicture.jpg') 0 0 scroll;
+    background-size: cover;
     position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+.navbar {
     background: rgba(255, 255, 255, 0.74);
     height: 80px;
-    padding: 0 30px;
+}
 
-    .header__logo {
-        // font-family: 'Cinzel Decorative', cursive;
+.nav {
+    position: relative;
+    margin-top: -80px;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    .nav__logo {
         font-family: 'Italiana', serif;
-        font-size: 50px;
-        color: rgb(51, 51, 51);
-    }
-    
-    .header__nav a{
-        padding-right: 20px;
-        text-decoration: none;
-        // text-transform: uppercase;
-        font-family: 'Jura', sans-serif;
-        font-weight: 500;
-        font-size: 25px;
+        font-size: 30px;
         color: rgb(51, 51, 51);
     }
 
-    .header__par {
-        padding-right: 20px;
+    .nav__links a {
+        margin-right: 20px;
         text-decoration: none;
-        // text-transform: uppercase;
-        font-family: 'Jura', sans-serif;
-        font-weight: 500;
-        font-size: 35px;
-        color: rgb(51, 51, 51);
+        @include nav_font;
+    }
+
+    .nav__links a:hover {
+        border-top: 1px ridge #ae7cc2;
+        border-bottom: 1px ridge #ae7cc2;
+        padding: 5px 0 5px 0;
+        color: #ae7cc2;
+    }
+
+    .nav__par {
+        @include nav_font;
     }
 }
 
+.block-online {
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 200px 0;
 
+    .block-online__main-text {
+        font-family: 'Italiana', serif;
+        font-size: 80px;
+        text-transform: uppercase;
+        color: rgb(255, 206, 45);
+    }
 
+    .block-online__main-text-description {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 35px;
+        color: rgb(255, 206, 45);
+        margin-bottom: 35px;
+    }
 
- 
+    .block-online__main-text-motto {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: rgb(255, 206, 45);
+        text-decoration: overline;
+        margin-bottom: 35px;
+    }
+
+    .block-online__button {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        width: 280px;
+        background-color: #bb2cf3;
+        text-align: center;
+        padding: 14px;
+        border: 0;
+        border-radius: 8px;
+        color: rgb(219, 206, 206);
+    }
+
+    .block-online__button:hover {
+        background-color: rgb(255, 206, 45);
+        color: rgb(51, 51, 51);
+    }
+}
