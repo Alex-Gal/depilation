@@ -11,12 +11,12 @@ export const MainPage = () => {
     <>
       <Header />
       <main className='main'>
-        <section className='first-section'>
+        <section className='about'>
           <div className="container">
-            {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Distinctio esse voluptas excepturi earum repudiandae ipsa,
               a culpa temporibus explicabo perspiciatis suscipit doloremque
-              quod fuga laboriosam quam inventore odio adipisci rem.</p> */}
+              quod fuga laboriosam quam inventore odio adipisci rem.</p>
           </div>
         </section>
       </main>

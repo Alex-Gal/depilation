@@ -9,33 +9,33 @@
 }
 
 .header {
-    background: url('../../img/firstBlockPicture.jpg') 0 0 scroll;
-    background-size: cover;
     position: relative;
     top: 0;
-    z-index: 0;
     width: 100%;
+    background: url('../../img/firstBlockPicture.jpg') 0 0 scroll;
+    background-size: cover;
+    z-index: 0;
 }
 
 .navbar {
-    background: rgba(255, 255, 255, 0.74);
     height: 80px;
+    background: rgba(255, 255, 255, 0.74);
 }
 
 .nav {
     position: relative;
-    margin-top: -80px;
-    z-index: 1;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    margin-top: -80px;
     height: 80px;
+    z-index: 1;
 
     .nav__logo {
+        color: rgb(51, 51, 51);
         font-family: 'Italiana', serif;
         font-size: 30px;
-        color: rgb(51, 51, 51);
     }
 
     .nav__links a {
@@ -45,10 +45,10 @@
     }
 
     .nav__links a:hover {
-        border-top: 1px ridge #ae7cc2;
-        border-bottom: 1px ridge #ae7cc2;
         padding: 5px 0 5px 0;
-        color: #ae7cc2;
+        color: #bb2cf3;
+        border-top: 1px ridge #bb2cf3;
+        border-bottom: 1px ridge #bb2cf3;
     }
 
     .nav__par {
@@ -57,49 +57,52 @@
 }
 
 .block-online {
-    min-height: 600px;
-    max-height: 800px;
     display: flex;
     flex-flow: column wrap;
-    margin: 200px 0;
+    margin-top: 200px;
+    min-height: 600px;
+    max-height: 800px;
 
     .block-online__main-text {
+        color: rgb(255, 206, 45);
         font-family: 'Italiana', serif;
         font-size: 80px;
         text-transform: uppercase;
-        color: rgb(255, 206, 45);
     }
 
     .block-online__main-text-description {
+        margin-bottom: 35px;
+        color: rgb(255, 206, 45);
         font-family: 'Montserrat', sans-serif;
         font-size: 35px;
-        color: rgb(255, 206, 45);
-        margin-bottom: 35px;
     }
 
     .block-online__main-text-motto {
+        margin-bottom: 35px;
+        color: rgb(255, 206, 45);
         font-family: 'Open Sans', sans-serif;
         font-size: 20px;
-        color: rgb(255, 206, 45);
         text-decoration: overline;
-        margin-bottom: 35px;
     }
 
     .block-online__button {
+        width: 280px;
+        padding: 14px;
+        color: rgb(219, 206, 206);
+        background-color: #bb2cf3;
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
         text-transform: uppercase;
-        width: 280px;
-        background-color: #bb2cf3;
         text-align: center;
-        padding: 14px;
-        border: 0;
-        border-radius: 8px;
-        color: rgb(219, 206, 206);
+        border: 1px solid rgb(185, 124, 167);
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px 2px #bb2cf3;
     }
 
     .block-online__button:hover {
-        background-color: rgb(255, 206, 45);
         color: rgb(51, 51, 51);
+        background-color: rgb(255, 206, 45);
+        border: none;
+        box-shadow: 0px 0px 4px 7px rgba(255, 224, 46, 0.5)
     }
 }
