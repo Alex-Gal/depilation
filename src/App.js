@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Routes, Route, Link } from 'react-router-dom';
 import { MainPage } from './components/MainPage/MainPage';
 
 import './App.scss';
