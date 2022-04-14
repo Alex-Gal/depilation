@@ -16,7 +16,7 @@ export const Header = () => {
                         <a href='./'>Прайс-лист</a>
                         <a href='#block_3'>Контакты</a>
                     </div>
-                    <p className='nav__par'>МТС +375292084163</p>
+                    <p className='nav__par'>МТС +375292060068</p>
                 </nav>
                 <div className='block-online'>
                     <ScrollAnimation delay={1000} duration={1} animateOnce={true} animateIn="fadeIn">
