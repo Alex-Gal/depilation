@@ -32,13 +32,13 @@ export const Header = () => {
                         <button onClick={() => window.open('https://dikidi.net/448067', '_blank')} className='block-online__button'>Записаться онлайн</button>
                     </ScrollAnimation>
                 </div>
-                <ScrollAnimation animateIn='bounceInRight'
+                {/* <ScrollAnimation animateIn='bounceInRight'
                     animateOut='bounceOutLeft'>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Distinctio esse voluptas excepturi earum repudiandae ipsa,
                         a culpa temporibus explicabo perspiciatis suscipit doloremque
                         quod fuga laboriosam quam inventore odio adipisci rem.</p>
-                </ScrollAnimation>
+                </ScrollAnimation> */}
             </div>
         </div>
     )
