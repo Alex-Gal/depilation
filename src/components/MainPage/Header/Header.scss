@@ -48,9 +48,24 @@
         border-bottom: 1px ridge #bb2cf3;
     }
 
-    .nav__par {
-        @include nav_font;
+    .nav__phone-block {
+        max-width: 300px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: right;
+
+        .nav__phone-icon {
+            height: 20px;
+            width: 20px;
+            fill: rgb(51, 51, 51);
+        }
+    
+        .nav__phone {
+            @include nav_font;
+        }
     }
+
+
 }
 
 .block-online {

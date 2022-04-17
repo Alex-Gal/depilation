@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.scss'
 import ScrollAnimation from 'react-animate-on-scroll';
+import { ReactComponent as PhoneIcon } from '../../../icons/phone.svg'
 
 export const Header = () => {
     return (
@@ -16,7 +17,11 @@ export const Header = () => {
                         <a href='./'>Прайс-лист</a>
                         <a href='#block_3'>Контакты</a>
                     </div>
-                    <p className='nav__par'>МТС +375292060068</p>
+                    
+                    <div className='nav__phone-block'>
+                        <PhoneIcon className='nav__phone-icon'/>
+                        <p className='nav__phone'>+375292060068</p>
+                    </div>
                 </nav>
                 <div className='block-online'>
                     <ScrollAnimation delay={1000} duration={1} animateOnce={true} animateIn="fadeIn">
