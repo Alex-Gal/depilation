@@ -1,0 +1,58 @@
+@mixin arrow {
+    height: 50px;
+    margin: 0 -50px;
+    &:hover {
+        border-radius: 50%;
+        padding: 5px;
+        border-right: 5px solid #b39909;
+    }
+}
+.carousel {
+    background: #b39909;
+
+    .carousel-provider {
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+    
+        .slider-box {
+            .slider-box__slide {
+                border: 15px solid rgb(255, 255, 255);
+            }
+    
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    
+        .slider-buttons {
+            position: absolute;
+            top: 43%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+    
+            .slider-buttons__button {
+                border: none;
+                background: none;
+    
+                .arrow-right {
+                    @include arrow;
+                }
+    
+                .arrow-left {
+                    @include arrow;
+                    transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                }
+            }
+        }
+    
+        .slider-dots {
+            width: 150px;
+            margin: 0 auto;
+        }
+    }
+}
