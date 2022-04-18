@@ -17,9 +17,9 @@ export const Header = () => {
                         <a href='./'>Прайс-лист</a>
                         <a href='#block_3'>Контакты</a>
                     </div>
-                    
+
                     <div className='nav__phone-block'>
-                        <PhoneIcon className='nav__phone-icon'/>
+                        <PhoneIcon className='nav__phone-icon' />
                         <p className='nav__phone'>+375292060068</p>
                     </div>
                 </nav>
@@ -37,13 +37,6 @@ export const Header = () => {
                         <button onClick={() => window.open('https://dikidi.net/448067', '_blank')} className='block-online__button'>Записаться онлайн</button>
                     </ScrollAnimation>
                 </div>
-                {/* <ScrollAnimation animateIn='bounceInRight'
-                    animateOut='bounceOutLeft'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Distinctio esse voluptas excepturi earum repudiandae ipsa,
-                        a culpa temporibus explicabo perspiciatis suscipit doloremque
-                        quod fuga laboriosam quam inventore odio adipisci rem.</p>
-                </ScrollAnimation> */}
             </div>
         </div>
     )

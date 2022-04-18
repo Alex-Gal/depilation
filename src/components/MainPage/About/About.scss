@@ -1,14 +1,74 @@
 .about {
     background: rgb(241, 211, 239);
-    display: flex;
-    flex-flow: row nowrap;
+    padding: 50px 0;
+}
 
-    .about__title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 35px;
+.about_block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .about__text {
+        width: 35%;
+
+        .about__text_title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 35px;
+        }
+
+        .about__text_line {
+            height: 1px;
+            background-color: black;
+            margin-bottom: 35px;
+        }
+
+        .about__text_list {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+
+            li {
+                background-image: url('../../../icons/marker.svg');
+                background-repeat: no-repeat;
+                padding-bottom: 30px;
+                background-position: 0 0;
+                background-size: 1.6rem 1.6rem;
+                padding-left: 2rem;
+            }
+        }
     }
-    .about__photos_image {
-        width: 20%;
-        height: 20%;
+
+    .about__photos {
+        position: relative;
+        width: 63%;
+
+        // отредактировать нормально
+        :nth-child(1) {
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 350px;
+            border-radius: 5%;
+            border: 5px solid #fff;
+        }
+
+        :nth-child(2) {
+            position: absolute;
+            top: 25%;
+            right: 0px;
+            width: 450px;
+            height: 350px;
+            border-radius: 5%;
+            border: 5px solid #fff;
+        }
+
+        :nth-child(3) {
+            position: absolute;
+            left: 5%;
+            bottom: 0px;
+            width: 250px;
+            height: 350px;
+            border-radius: 5%;
+            border: 5px solid #fff;
+        }
     }
 }
