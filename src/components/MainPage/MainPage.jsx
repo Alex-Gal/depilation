@@ -14,8 +14,8 @@ export const MainPage = () => {
       <Header />
       <main className='main'>
         <About />
-        <Carousel />
         <Promo />
+        <Carousel />
         <OnMap />
       </main>
       <Footer />

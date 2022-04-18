@@ -42,14 +42,14 @@ export const About = () => {
                         </ul>
                     </div>
                     <div className='about__photos'>
+                        <ScrollAnimation offset={100} delay={100} animateIn='bounceInRight'>
+                            <img className='about__photos_image1' src={img1} alt='Waxing' />
+                        </ScrollAnimation>
                         <ScrollAnimation offset={50} delay={100} animateIn='bounceInRight'>
-                            <img className='about__photos_image' src={img1} alt='Waxing' />
+                            <img className='about__photos_image2' src={img1} alt='Waxing' />
                         </ScrollAnimation>
-                        <ScrollAnimation delay={100} animateIn='bounceInRight'>
-                            <img className='about__photos_image' src={img1} alt='Waxing' />
-                        </ScrollAnimation>
-                        <ScrollAnimation delay={100} animateIn='bounceInRight'>
-                            <img className='about__photos_image' src={img1} alt='Waxing' />
+                        <ScrollAnimation offset={50} delay={100} animateIn='bounceInRight'>
+                            <img className='about__photos_image3' src={img1} alt='Waxing' />
                         </ScrollAnimation>
                     </div>
                 </div>
