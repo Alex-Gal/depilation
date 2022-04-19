@@ -1,58 +1,75 @@
-@mixin arrow {
-    height: 50px;
-    margin: 0 -50px;
-    &:hover {
-        border-radius: 50%;
-        padding: 5px;
-        border-right: 5px solid #b39909;
-    }
-}
+// @mixin arrow {
+//     height: 50px;
+//     margin: 0 -50px;
+
+//     &:hover {
+//         border-radius: 50%;
+//         padding: 5px;
+//         border-right: 5px solid #b39909;
+//     }
+// }
+
 .carousel {
-    // background: #F5E9F5;
+    padding: 50px 0;
+
+    .carousel__title {
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 35px;
+    }
+
+    .carousel__title_line {
+        height: 1px;
+        background-color: black;
+        margin-bottom: 35px;
+        width: 35%;
+        display: inline-block;
+        margin-left: auto
+    }
 
     .carousel-provider {
         position: relative;
         display: flex;
         flex-flow: column nowrap;
-    
+
         .slider-box {
             .slider-box__slide {
                 border: 15px solid rgb(255, 255, 255);
             }
-    
+
             img {
                 object-fit: cover;
                 height: 100%;
                 width: 100%;
             }
         }
-    
-        .slider-buttons {
-            position: absolute;
-            top: 43%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-    
-            .slider-buttons__button {
-                border: none;
-                background: none;
-    
-                .arrow-right {
-                    @include arrow;
-                }
-    
-                .arrow-left {
-                    @include arrow;
-                    transform: rotate(180deg);
-                    -webkit-transform: rotate(180deg);
-                }
-            }
-        }
-    
-        .slider-dots {
-            width: 150px;
-            margin: 0 auto;
-        }
+
+        // .slider-buttons {
+        //     position: absolute;
+        //     top: 43%;
+        //     width: 100%;
+        //     display: flex;
+        //     justify-content: space-between;
+
+        // .slider-buttons__button {
+        //     border: none;
+        //     background: none;
+
+        //     .arrow-right {
+        //         @include arrow;
+        //     }
+
+        //     .arrow-left {
+        //         @include arrow;
+        //         transform: rotate(180deg);
+        //         -webkit-transform: rotate(180deg);
+        //     }
+        // }
+        // }
+
+        // .slider-dots {
+        //     width: 150px;
+        //     margin: 0 auto;
+        // }
     }
 }

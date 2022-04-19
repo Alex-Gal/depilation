@@ -1,4 +1,40 @@
 .promo {
+    position: relative;
+    top: 0;
     height: 300px;
-    // background: #F5E9F5;
+    padding: 50px 0 56.25% 0;
+
+    .promo__title {
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 35px;
+    }
+
+    .promo__line {
+        height: 1px;
+        background-color: black;
+        margin-bottom: 35px;
+        width: 35%;
+        display: inline-block;
+        margin-left: auto
+    }
+
+    .promo__video {
+        position: relative;
+        top: 0;
+        padding-bottom: 56.25%;
+        /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+        height: 0;
+        overflow: hidden;
+
+        .promo__video_player {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-width: 0;
+            outline-width: 0;
+        }
+    }
 }

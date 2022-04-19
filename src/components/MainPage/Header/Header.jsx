@@ -9,12 +9,14 @@ export const Header = () => {
             <div className="navbar"></div>
             <div className="container">
                 <nav className='nav'>
-                    <p className='nav__logo'>IRINA_VOLOSNET</p>
+                    <p className='nav__logo'>IRINA<br />VOLOSNET</p>
                     <div className='nav__links'>
-                        <a href='#block_1'>Главная</a>
+                        <a href='#block_1'>Услуги</a>
+                        <a href='#block_1'>Цены</a>
+                        <a href='./'>Обучение</a>
                         <a href='#block_2'>Обо мне</a>
-                        <a href='./'>Курсы</a>
-                        <a href='./'>Прайс-лист</a>
+                        {/* <a href='./'>Гайд для мастера</a> */}
+                        <a href='./'>Галерея</a>
                         <a href='#block_3'>Контакты</a>
                     </div>
 
