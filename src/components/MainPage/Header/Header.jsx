@@ -8,23 +8,56 @@ export const Header = () => {
         <div className='header'>
             <div className="navbar"></div>
             <div className="container">
-                <nav className='nav'>
+                <div className='nav'>
                     <p className='nav__logo'>IRINA<br />VOLOSNET</p>
-                    <div className='nav__links'>
-                        <a href='#block_1'>Услуги</a>
-                        <a href='#block_1'>Цены</a>
-                        <a href='./'>Обучение</a>
-                        <a href='#block_2'>Обо мне</a>
-                        {/* <a href='./'>Гайд для мастера</a> */}
-                        <a href='./'>Галерея</a>
-                        <a href='#block_3'>Контакты</a>
-                    </div>
+
+
+
+                    <nav className='menu'>
+                        <ul className='menu__list'>
+                            <li>
+                                <a className='menu__link' href='/'>Услуги</a>
+                                <span className="menu__arrow arrow"></span>
+                                <ul className='sub-menu__list'>
+                                    <li>
+                                        <a href="/">Восковая депиция</a>
+                                        <ul className="sub-sub-menu__list">
+                                            <li>
+                                                <a className="sub-sub-menu__link" href='/'>Бикини</a>
+                                            </li>
+                                            <li>
+                                                <a className="sub-sub-menu__link" href='/'>Бикини</a>
+                                            </li>
+                                            <li>
+                                                <a className="sub-sub-menu__link" href='/'>Бикини</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/">Пилинг</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Комплексы</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a className='menu__link' href='/'>Цены</a></li>
+                            <li><a className='menu__link' href='/'>Обучение</a></li>
+                            <li><a className='menu__link' href='/'>Обо мне</a></li>
+                            <li><a className='menu__link' href='/'>Галерея</a></li>
+                            <li><a className='menu__link' href='/'>Контакты</a></li>
+
+                        </ul>
+                    </nav>
+
+
+
 
                     <div className='nav__phone-block'>
                         <PhoneIcon className='nav__phone-icon' />
                         <p className='nav__phone'>+375292060068</p>
                     </div>
-                </nav>
+                </div>
                 <div className='block-online'>
                     <ScrollAnimation delay={1000} duration={1} animateOnce={true} animateIn="fadeIn">
                         <p className='block-online__main-text'>irina_volosnet</p>

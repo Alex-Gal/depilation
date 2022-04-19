@@ -33,24 +33,106 @@
         color: rgb(51, 51, 51);
         font-family: 'Italiana', serif;
         font-size: 30px;
-        border: 3px solid #bb2cf3;
-        border-radius: 50%;
+        // border: 3px solid #bb2cf3;
+        // border-radius: 50%;
         // transform: rotate(45deg);
     }
 
-    .nav__links a {
-        margin-right: 20px;
+    .menu {}
+
+    .menu a {
         text-decoration: none;
+    }
+
+    .menu li {
+        position: relative;
+        list-style: none;
+    }
+
+    .menu__list {
+        display: flex;
+    }
+
+    .menu__list>li {
+        margin: 0 10px 0 0;
+    }
+
+    .menu__list>li:hover .sub-menu__list {
+        display: block;
+    }
+
+    .menu__link {
+        color: #bb2cf3;
+        margin-right: 20px;
         transition-duration: 300ms;
         @include nav_font;
     }
 
-    .nav__links a:hover {
+    .menu__link:hover {
         padding: 5px 0 5px 0;
         color: #bb2cf3;
         border-top: 1px ridge #bb2cf3;
         border-bottom: 1px ridge #bb2cf3;
     }
+
+    .sub-menu__list {
+        display: none;
+        min-width: 300px;
+        position: absolute;
+        left: 0;
+        top: 20px;
+        padding: 30px 0 0 0;
+
+    }
+
+    .sub-menu__list>li {
+        background-color: #fff;
+    }
+
+    .sub-menu__list>li:hover .sub-sub-menu__list {
+        display: block;
+    }
+
+    .sub-menu__link {
+        color: #000;
+        display: inline-block;
+        padding: 5px 10px;
+    }
+
+    .sub-sub-menu__list {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: 300px;
+        padding: 0 0 0 5px;
+    }
+    .sub-sub-menu__list>li{
+        background-color: #000;
+    }
+
+    .sub-sub-menu__link {
+        color: #fff;
+        display: inline-block;
+        padding: 5px 10px;
+    }
+
+    .arrow {
+        position: absolute;
+        right: 0;
+        top: 12px;
+        width: 0;
+        height: 0;
+        border-top: 10px solid #fff;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+    }
+    .menu__arrow {
+
+    }
+
+
+ // ---------------------------------------------------------------------
 
     .nav__phone-block {
         max-width: 300px;
