@@ -30,15 +30,16 @@
     }
 
     .carousel-provider {
+        padding: 0;
         position: relative;
         display: flex;
         flex-flow: column nowrap;
+        
 
         .slider-box {
             .slider-box__slide {
-                // border: 15px solid rgb(255, 255, 255);
-                // margin: 15px;
-                border: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-left: 15px solid transparent;
             }
 
             img {
