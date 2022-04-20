@@ -12,7 +12,7 @@ export const Carousel = () => {
   const [img1, img2, img3, img4, img5, img6] = sliderImagesArr;
 
   return (
-    <section className='carousel'>
+    <section className='carousel' id='carousel'>
       <div className='container'>
         <ScrollAnimation offset={50} delay={100} animateIn='fadeIn'>
           <h2 className='carousel__title'>Фотогалерея</h2>

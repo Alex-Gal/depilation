@@ -62,6 +62,7 @@
     }
 
     .menu__link {
+        // text-transform: uppercase;
         color: #bb2cf3;
         margin-right: 20px;
         transition-duration: 300ms;
@@ -77,62 +78,98 @@
 
     .sub-menu__list {
         display: none;
-        min-width: 300px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        min-width: 200px;
         position: absolute;
-        left: 0;
+        left: -10px;
         top: 20px;
         padding: 30px 0 0 0;
-
     }
 
     .sub-menu__list>li {
-        background-color: #fff;
+        // background-color: rgb(247, 221, 248);
+        background: rgba(255, 255, 255, 0.74);
+        padding: 5px 0 5px 0px;
+    }
+
+    .sub-menu__list>li:first-child {
+        border-top: 1px solid #bb2cf3;
+    }
+
+    .sub-menu__list>li:last-child {
+        border-bottom: 1px solid #bb2cf3;
     }
 
     .sub-menu__list>li:hover .sub-sub-menu__list {
         display: block;
     }
 
+    .sub-menu__list>li:hover {
+        background-color: rgba(187, 44, 243, 0.589);
+    }
+
+    .sub-menu__list>li:hover .sub-menu__link {
+        color: rgb(255, 255, 255);
+    }
+
     .sub-menu__link {
-        color: #000;
         display: inline-block;
         padding: 5px 10px;
     }
 
+    ///////////////////////
+
     .sub-sub-menu__list {
         display: none;
         position: absolute;
-        top: 0;
+        top: -1px;
         left: 100%;
-        min-width: 300px;
-        padding: 0 0 0 5px;
+        min-width: 275px;
+        padding: 0 0 0 2px;
     }
-    .sub-sub-menu__list>li{
-        background-color: #000;
+
+    .sub-sub-menu__list>li {
+        background: rgba(255, 255, 255, 0.74);
+    }
+
+    .sub-sub-menu__list>li:first-child {
+        border-top: 1px solid #bb2cf3;
+    }
+
+    .sub-sub-menu__list>li:last-child {
+        border-bottom: 1px solid #bb2cf3;
+    }
+
+    .sub-sub-menu__list>li:hover {
+        background-color: rgba(187, 44, 243, 0.589);
+    }
+
+    .sub-sub-menu__list>li:hover .sub-sub-menu__link {
+        color: rgb(255, 255, 255);
     }
 
     .sub-sub-menu__link {
-        color: #fff;
         display: inline-block;
         padding: 5px 10px;
     }
 
     .arrow {
+        display: none;
         position: absolute;
         right: 0;
-        top: 12px;
+        top: 7px;
         width: 0;
         height: 0;
         border-top: 10px solid #fff;
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
     }
-    .menu__arrow {
 
-    }
+    .menu__arrow {}
 
 
- // ---------------------------------------------------------------------
+    // ---------------------------------------------------------------------
 
     .nav__phone-block {
         max-width: 300px;

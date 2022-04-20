@@ -8,7 +8,7 @@ export const About = () => {
     const [img1] = aboutImages;
 
     return (
-        <section className='about'>
+        <section className='about' id='about'>
             <div className='container'>
                 <div className="about_block">
                     <div className='about__text'>

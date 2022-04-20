@@ -1,10 +1,12 @@
 .promo {
+    background: linear-gradient(180deg, #C5DDE8, #EECFBA);
     position: relative;
     top: 0;
     height: 300px;
     padding: 50px 0 56.25% 0;
 
     .promo__title {
+        color: #bb2cf3;
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         font-size: 35px;
@@ -12,7 +14,7 @@
 
     .promo__line {
         height: 1px;
-        background-color: black;
+        background-color: #bb2cf3;
         margin-bottom: 35px;
         width: 35%;
         display: inline-block;

@@ -4,7 +4,7 @@ import { About } from './About/About'
 import { Footer } from './Footer/Footer'
 import { Carousel } from './Carousel/Carousel'
 import { Promo } from './Promo/Promo'
-import { OnMap } from './OnMap/OnMap'
+// import { OnMap } from './OnMap/OnMap'
 
 import './MainPage.scss'
 
@@ -16,7 +16,7 @@ export const MainPage = () => {
         <About />
         <Promo />
         <Carousel />
-        <OnMap />
+        {/* <OnMap /> */}
       </main>
       <Footer />
     </>
